@@ -79,8 +79,8 @@ Application de gestion d'universite (cours, emplois du temps, fees,...) pour les
 | ZIANI Imane                 | Partie Student (Views)                |
 | SGHIOURI el idrissi Mohammed| Partie Admin (Views)                  |
 | EL BOUZYANI Intissar        | Partie Admin (Views)                  |
-| EL MOURABIT Mohammed        | Partie Faculty (Views)                |
-| FAKIHI MOUAD                | Partie Faculty (Views)                |
+| EL MOURABIT Mohammed        | Partie Faculty (Views) & Design       |
+| FAKIHI MOUAD                | Partie Faculty (Views) & Design       |
 
 
 
