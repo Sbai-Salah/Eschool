@@ -2,12 +2,24 @@
 Application de gestion d'universite (cours, emplois du temps, fees,...) pour les profs, étudiant(e)s et la faculté.
 ------
 
-
+![logoAPP](https://github.com/Sbai-Salah/Eschool/blob/main/eschool/src/img/ICON2.png)
 
 ## Pourquoi Eschool ?
 
 
 ## Les outils qu'on a utiliser
+
+> Editeur IntelliJ : [Download it here](https://www.jetbrains.com/fr-fr/idea/download/download-thanks.html?platform=windows&code=IIC)
+
+
+> Version 11.0.1 & 11.0.2 du Javafx SDK. (Voir ci-dessous pour les telechargers)
+
+
+> OpenJDK-17
+
+
+> Mysql-connector-java-8.0.17
+
 
 ## Maquettes graphique & Remarques sur le design
 
@@ -20,7 +32,7 @@ Application de gestion d'universite (cours, emplois du temps, fees,...) pour les
 
 - [X] A l'interieur du fichier eschool on va faire quelques modifications : 
     + Prenez le fichier `production` et metter-le dans le dossier `out`.
-    + Telecharger le dossier des images en cliquant ici [Img]() puis metter-le dans le dossier `eschool`.
+    + Telecharger le dossier des images en cliquant ici [Img](https://drive.google.com/drive/folders/1VuuXSiCldWZwY2GsjuMkmv04Uf9sC4Jc?usp=sharing) puis metter-le dans le dossier `eschool`.
     + (Voir l'arborescance du dossier eschool ci-dessous)
 
 - [X] Telecharger les deux versions du Javafx SDK [11.0.1](https://download2.gluonhq.com/openjfx/11.0.1/openjfx-11.0.1_windows-x64_bin-sdk.zip) et [11.0.2](https://download2.gluonhq.com/openjfx/11.0.2/openjfx-11.0.2_windows-x64_bin-sdk.zip), apres telechargement extracter les deux n'importe ou (on va l'utiliser apres)
@@ -59,3 +71,25 @@ Application de gestion d'universite (cours, emplois du temps, fees,...) pour les
 
 
 ## Le team
+
+|       Noms                  |         Position & travail            |        
+| -------------               | ------------------------------------  |
+| SBAI Salah                  | Chef de projet & Code Controlleurs    |
+| MHARZI Chaymae              | Partie Student (Views)                |
+| ZIANI Imane                 | Partie Student (Views)                |
+| SGHIOURI el idrissi Mohammed| Partie Admin (Views)                  |
+| EL BOUZYANI Intissar        | Partie Admin (Views)                  |
+| EL MOURABIT Mohammed        | Partie Faculty (Views)                |
+| FAKIHI MOUAD                | Partie Faculty (Views)                |
+
+
+
+
+
+
+
+
+
+
+
+
