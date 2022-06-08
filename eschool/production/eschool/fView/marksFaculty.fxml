@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1020.0" style="-fx-background-color: #EDEDED;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fController.marksFaculty">
+   <children>
+      <ImageView fitHeight="90.0" fitWidth="300.0" layoutX="400.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/ICON2.png" />
+         </image>
+      </ImageView>
+      <VBox layoutY="94.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="80.0" style="-fx-background-color: #452153;">
+         <children>
+            <HBox fx:id="btnHome" alignment="CENTER" onMouseClicked="#FacultyDashboard" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #2D2D37;">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/home%20%5B%231391%5D.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox fx:id="btn" alignment="CENTER" layoutX="10.0" layoutY="84.0" onMouseClicked="#attendence" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #2D2D37;">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Blunicons/PNG/Stats.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="1.0" hue="0.21" saturation="1.0" />
+                     </effect>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="204.0" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #3A84CD;">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Blunicons/PNG/Diploma.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="264.0" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #2D2D37;" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="384.0" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #2D2D37;" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="324.0" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #2D2D37;" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="144.0" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #2D2D37;" />
+            <HBox fx:id="fd_logout" alignment="CENTER" layoutX="10.0" layoutY="444.0" onMousePressed="#logout" prefHeight="95.0" prefWidth="80.0" style="-fx-background-color: #EDEDED;">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../img/logout.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ScrollPane layoutX="100.0" layoutY="153.0" prefHeight="370.0" prefWidth="600.0">
+         <content>
+            <TableView fx:id="table" prefHeight="374.0" prefWidth="602.0">
+              <columns>
+                <TableColumn id="col_sId" fx:id="col_sId" prefWidth="150.0" text="Std Id" />
+                  <TableColumn id="col_lName" fx:id="col_lName" prefWidth="150.0" text="Last Name" />
+                  <TableColumn id="col_cId" fx:id="col_cId" minWidth="0.0" prefWidth="150.0" text="Course Id" />
+                <TableColumn id="col_fName" fx:id="col_fName" prefWidth="150.0" text="First Name" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <TextField id="marksField" fx:id="marksField" layoutX="754.0" layoutY="369.0" prefHeight="33.0" prefWidth="202.0" promptText="Enter Marks" />
+      <Button id="saveBtn" fx:id="saveBtn" layoutX="755.0" layoutY="419.0" mnemonicParsing="false" onAction="#saveMarks" prefHeight="33.0" prefWidth="202.0" style="-fx-background-color: #3A84CD;" text="Save Marks" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <ComboBox fx:id="comboType" layoutX="855.0" layoutY="154.0" prefHeight="33.0" prefWidth="125.0" promptText="Select Type" style="-fx-background-color: #CDCDCD;" />
+      <HBox layoutX="744.0" layoutY="115.0" prefHeight="35.0" prefWidth="107.0">
+         <children>
+            <Label fx:id="courseLabel" graphicTextGap="8.0" prefHeight="35.0" prefWidth="0.0" textAlignment="CENTER" textFill="#fcf9f9" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TextField id="marksField" fx:id="totalMarks" layoutX="754.0" layoutY="319.0" prefHeight="33.0" prefWidth="202.0" promptText="Total Marks" />
+      <TextField fx:id="Id" layoutX="755.0" layoutY="269.0" prefHeight="33.0" prefWidth="202.0" promptText="Quiz No." />
+      <HBox alignment="CENTER" layoutY="-2.0" onMousePressed="#logout" prefHeight="95.0" prefWidth="80.0" style="-fx-background-color: #EDEDED;">
+         <children>
+            <ImageView fitHeight="64.0" fitWidth="60.0">
+               <image>
+                  <Image url="@../img/ICON.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label contentDisplay="CENTER" layoutX="100.0" layoutY="15.0" prefHeight="64.0" prefWidth="160.0" text="FACULTY" textAlignment="CENTER" textFill="#2d2d37">
+         <font>
+            <Font name="Leelawadee UI Bold" size="30.0" />
+         </font>
+      </Label>
+      <HBox fx:id="fd_logout21" alignment="CENTER_LEFT" layoutX="857.0" layoutY="24.0" onMousePressed="#logout" prefHeight="33.0" prefWidth="149.0" style="-fx-background-color: #3A84CD;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="80.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="64.0" prefWidth="71.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="35.0" prefWidth="40.0" style="-fx-background-color: #2D2D37;">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0">
+                                 <image>
+                                    <Image url="@../img/logout.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <Label prefHeight="33.0" prefWidth="150.0" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI" size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="12.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <Label fx:id="courseLabel1" graphicTextGap="8.0" layoutX="734.0" layoutY="153.0" prefHeight="35.0" prefWidth="109.0" text="Course Code:   " textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="106.0" layoutY="88.0" text="Marks Management" textAlignment="CENTER" textFill="#3a84cd">
+         <font>
+            <Font name="Leelawadee UI Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
