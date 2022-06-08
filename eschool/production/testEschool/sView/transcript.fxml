@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1020.0" style="-fx-background-color: #EDEDED;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sController.transcript_C">
+    <children>
+        <ImageView fitHeight="90.0" fitWidth="300.0" layoutX="400.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/ICON2.png" />
+            </image>
+        </ImageView>
+        <VBox layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="80.0" style="-fx-background-color: #452153;">
+            <children>
+                <HBox alignment="CENTER" prefHeight="95.0" prefWidth="80.0" style="-fx-background-color: #EDEDED;">
+                    <children>
+                        <ImageView fitHeight="64.0" fitWidth="60.0" pickOnBounds="true" smooth="false">
+                            <image>
+                                <Image url="@../img/ICON.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" onMouseClicked="#homei" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #2D2D37;">
+                    <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/home%20%5B%231391%5D.png" />
+                            </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="84.0" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #3a84cd;">
+                    <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/Blunicons/PNG/Stats.png" />
+                            </image>
+                            <effect>
+                                <ColorAdjust brightness="1.0" contrast="1.0" hue="0.21" saturation="1.0" />
+                            </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="204.0" onMousePressed="#courseReg" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #2D2D37;">
+                    <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/Blunicons/PNG/Notepad.png" />
+                            </image>
+                            <effect>
+                                <ColorAdjust brightness="1.0" />
+                            </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="264.0" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #2D2D37;">
+                    <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/Blunicons/PNG/Diploma.png" />
+                            </image>
+                            <effect>
+                                <ColorAdjust brightness="1.0" />
+                            </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="384.0" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #2D2D37;">
+                    <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/Blunicons/PNG/Read.png" />
+                            </image>
+                            <effect>
+                                <ColorAdjust brightness="1.0" />
+                            </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="324.0" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #2D2D37;">
+                    <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/Blunicons/PNG/Calendar.png" />
+                            </image>
+                            <effect>
+                                <ColorAdjust brightness="1.0" />
+                            </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="144.0" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #2D2D37;">
+                    <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/Blunicons/PNG/Settings.png" />
+                            </image>
+                            <effect>
+                                <ColorAdjust brightness="1.0" />
+                            </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="444.0" onMouseClicked="#logout" prefHeight="95.0" prefWidth="80.0" style="-fx-background-color: #EDEDED;">
+                    <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/logout.png" />
+                            </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </ImageView>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER_LEFT" layoutX="857.0" layoutY="24.0" prefHeight="33.0" prefWidth="149.0" style="-fx-background-color: #3a84cd;">
+            <children>
+                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="80.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="80.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="46.0" prefWidth="71.0" style="-fx-background-color: #2D2D37;">
+                                    <children>
+                                        <ImageView fitHeight="32.0" fitWidth="25.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/logout.png" />
+                                            </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+                <Label id="fd_logout" onMouseClicked="#logout" prefHeight="33.0" prefWidth="150.0" text="Logout" textFill="WHITE">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                    <padding>
+                        <Insets left="12.0" />
+                    </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </Label>
+            </children>
+        </HBox>
+        <Label layoutX="213.0" layoutY="150.0" prefHeight="20.0" prefWidth="54.0" text="Roll No:" textFill="#2d2d37">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="433.0" layoutY="150.0" prefHeight="18.0" prefWidth="53.0" text="Name:" textFill="#2d2d37">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="652.0" layoutY="151.0" prefHeight="18.0" prefWidth="53.0" text="Batch:" textFill="#2d2d37">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="253.0" layoutY="259.0" text="Cr.Attempted:" textFill="#2d2d37">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <Label layoutX="428.0" layoutY="258.0" text="Cr.Earned:" textFill="#2d2d37">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <Label layoutX="601.0" layoutY="258.0" text="CGPA:" textFill="#2d2d37">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <Label layoutX="772.0" layoutY="257.0" text="SGPA:" textFill="#2d2d37">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TableView fx:id="table" layoutX="152.0" layoutY="290.0" prefHeight="250.0" prefWidth="800.0" stylesheets="@../utilities/fee_table.css">
+            <columns>
+                <TableColumn fx:id="code" prefWidth="100.0" text="Code" />
+                <TableColumn fx:id="course_name" prefWidth="200.0" text="Course Name" />
+                <TableColumn fx:id="crdt_hrs" prefWidth="100.0" text="CrdHrs" />
+                <TableColumn fx:id="grades" prefWidth="100.0" text="Grades" />
+                <TableColumn fx:id="points" prefWidth="100.0" text="Points" />
+                <TableColumn fx:id="type" prefWidth="100.0" text="Type" />
+            <TableColumn fx:id="remarks" prefWidth="100.0" text="Remarks" />
+            </columns>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </TableView>
+        <Label fx:id="roll_no" layoutX="290.0" layoutY="136.0" prefHeight="49.0" prefWidth="110.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Label fx:id="st_name" layoutX="486.0" layoutY="139.0" prefHeight="42.0" prefWidth="137.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="crh_attempt" layoutX="344.0" layoutY="249.0" prefHeight="35.0" prefWidth="64.0" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label fx:id="crh_earned" layoutX="498.0" layoutY="251.0" prefHeight="33.0" prefWidth="64.0" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label fx:id="cgpa" layoutX="642.0" layoutY="247.0" prefHeight="42.0" prefWidth="90.0" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label fx:id="sgpa" layoutX="812.0" layoutY="245.0" prefHeight="42.0" prefWidth="90.0" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label fx:id="batch" layoutX="737.0" layoutY="145.0" prefHeight="32.0" prefWidth="110.0" text="2021" textFill="#2d2d37">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <HBox layoutX="206.0" layoutY="185.0" prefHeight="59.0" prefWidth="648.0" style="-fx-background-color: ffffff;">
+         <children>
+              
+      
+              <Label alignment="CENTER" prefHeight="59.0" prefWidth="229.0" style="-fx-background-color: #3a84cd;" text="Student Transcript" textFill="WHITE">
+                  <font>
+                      <Font name="System Bold" size="20.0" />
+                  </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+              </Label>
+              <ComboBox fx:id="comboBox" blendMode="DARKEN" onAction="#print_Data_on_table" prefHeight="31.0" prefWidth="147.0" promptText="Semester &gt;&gt;" style="-fx-background-color: #EDEDED;">
+               <HBox.margin>
+                  <Insets left="250.0" top="13.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+      </HBox>
+      <Label contentDisplay="CENTER" layoutX="100.0" layoutY="15.0" prefHeight="64.0" prefWidth="160.0" text="STUDENT" textAlignment="CENTER" textFill="#2d2d37">
+         <font>
+            <Font name="Leelawadee UI Bold" size="30.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
