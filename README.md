@@ -23,6 +23,10 @@ Application de gestion d'universite (cours, emplois du temps, fees,...) pour les
 
 ## Maquettes graphique & Remarques sur le design
 
+![Web 1920 – 2](https://user-images.githubusercontent.com/101054444/172859825-0afe2c98-be65-4fdf-a99a-8f8615d0d9df.jpg)
+![Web 1920 – 1](https://user-images.githubusercontent.com/101054444/172859891-3c34e9e7-5168-49a6-8ac5-df50cbd23d35.jpg)
+![Web 1920 – 3](https://user-images.githubusercontent.com/101054444/172859921-519b14cf-9066-447e-9dc1-2c9d50a6bf4e.jpg)
+![Web 1920 – 4](https://user-images.githubusercontent.com/101054444/172859985-c704e65c-0a43-4492-ab55-7f8c9b4a7705.jpg)
 
 
 
